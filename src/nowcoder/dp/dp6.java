@@ -33,4 +33,26 @@ public class dp6 {
         }
         return maxResult;
     }
+    // 不仅找大小，而且找位置
+    public int[] maxSubArray(int[] nums) {
+        int start = 0;
+        int sum = nums[0];
+        int max = nums[0];
+        int[] res = new int[2];
+        for (int i = 1;i<nums.length;i++){
+            if(sum>0){
+                sum+=nums[i];
+            }else {
+                sum = nums[i];
+                start = i;
+            }
+            if(sum>max){
+                max = sum;
+                res[0] = start;
+                res[1] = i;
+            }
+        }
+        return res;
+    }
+
 }
