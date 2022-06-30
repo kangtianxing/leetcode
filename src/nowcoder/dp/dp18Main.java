@@ -20,7 +20,7 @@ public class dp18Main {
         }
         int maxResult =0;
         int[][] dp = new int[n][m];
-        for (int i = 0;i<n;i++){
+        for (int i =0;i<n;i++){
             Arrays.fill(dp[i],-1);
         }
         for (int i = 0;i<n;i++){
@@ -30,22 +30,22 @@ public class dp18Main {
         }
         System.out.println(maxResult);
     }
-    static int[][] dir = {{0,1},{0,-1},{1,0},{-1,0}};
-    private static int dp(int i, int j, int[][] matrix,int[][] dp) {
-        int dv = dp[i][j];
-        if(dv!=-1){
-            return dv;
+    static int[][] dirs = {{0,1,},{0,-1},{-1,0},{1,0}};
+    private static int dp(int i, int j, int[][] matrix, int[][] dp) {
+        if(dp[i][j]!=-1){
+            return dp[i][j];
         }
         int v = 1;
         for (int k = 0;k<4;k++){
-            int a =i+dir[k][0];
-            int b =j+dir[k][1];
-            if(a>=0&&b>=0&&a<matrix.length&&b<matrix[0].length&&matrix[a][b]<matrix[i][j]){
-                v = Math.max(v,dp(a,b,matrix,dp)+1);
+            int x =dirs[k][0]+i;
+            int y =dirs[k][1]+j;
+            if(x>=0&&y>=0&&x<matrix.length&&y<matrix[0].length&&matrix[x][y]<matrix[i][j]){
+                v = Math.max(v,dp(x,y,matrix,dp)+1);
             }
         }
         dp[i][j] = v;
         return v;
 
     }
+
 }
