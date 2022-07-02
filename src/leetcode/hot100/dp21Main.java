@@ -30,7 +30,7 @@ public class dp21Main {
         for (int i = 1;i<=m;i++){
             for (int j = 1;j<=n;j++){
                 char sc = str.charAt(i-1);
-                char pc = str.charAt(j-1);
+                char pc = pattern.charAt(j-1);
                 if(sc==pc|| pc=='.'){
                     dp[i][j] = dp[i-1][j-1];
                 }else if(pc=='*'){
