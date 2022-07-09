@@ -11,35 +11,35 @@ import java.util.List;
  */
 public class ListTest {
     public static void main(String[] args) {
-        testRemoveList();
-//        ArrayList<String> list = new ArrayList<>();
-//        list.add("nihao");
-//        list.add("lisi");
-//        Iterator<String> iterator = list.iterator();
-//        while (iterator.hasNext()){
-//            if(iterator.next().equals("lisi")){
-//                iterator.remove();
-//            }
-//        }
-//        for (String element : list) {
-//            System.out.println(element);
-//        }
+//        testRemoveList();
+        ArrayList<String> list = new ArrayList<>();
+        list.add("nihao");
+        list.add("lisi");
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()){
+            if(iterator.next().equals("lisi")){
+                iterator.remove();
+            }
+        }
+        for (String element : list) {
+            System.out.println(element);
+        }
     }
     public static void testAsList(){
         String[] arrays = {"1","2","3"};
         List<String> list = Arrays.asList(arrays);
         list.add("other element");
     }
-    public static void testRemoveList(){
-        String[] arrays = {"1","2","3"};
-        List<String> list = new ArrayList<>(Arrays.asList(arrays));
-        for (String str : list) {
-            if(str.equals("1")){
-                list.remove(str);
-            }
-        }
-
-    }
+//    public static void testRemoveList(){
+//        String[] arrays = {"1","2","3"};
+//        List<String> list = new ArrayList<>(Arrays.asList(arrays));
+//        for (String str : list) {
+//            if(str.equals("1")){
+//                list.remove(str);
+//            }
+//        }
+//
+//    }
 
 
 }
