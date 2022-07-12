@@ -30,6 +30,9 @@ public class ListTest {
         List<String> list = Arrays.asList(arrays);
         list.add("other element");
     }
+    public static void testVar(){
+        var upList1 = List.of("liu", "zhao", "zhang");
+    }
 //    public static void testRemoveList(){
 //        String[] arrays = {"1","2","3"};
 //        List<String> list = new ArrayList<>(Arrays.asList(arrays));
