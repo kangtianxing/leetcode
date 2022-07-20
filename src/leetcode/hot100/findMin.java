@@ -2,7 +2,7 @@ package leetcode.hot100;
 
 /**
  * @ClassName findMin
- * @Description TODO
+ * @Description 旋转数组找最小值和目标值
  * @Author ktx
  * @Date 2022-07-18 23:07
  * @Version 1.0
