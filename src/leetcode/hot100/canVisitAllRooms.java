@@ -11,6 +11,16 @@ import java.util.List;
  * @Version 1.0
  */
 public class canVisitAllRooms {
+    public static void main(String[] args) {
+        int sum = 0;
+        int count = 0;
+        for (int i = 0;i!=10;i++){
+            sum+=i;
+            count++;
+
+        }
+        System.out.println(count);
+    }
 
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         List<Boolean> visited = new ArrayList<>();
