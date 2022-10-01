@@ -3,6 +3,7 @@ package base.juc.poll;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.stream.Collectors;
 
 /**
  * @ClassName T3
@@ -27,6 +28,10 @@ public class T3 {
 
 
     public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+//        list.forEach();
+//        List <Integer> people = list.getStream.collect(Collectors.toList());
+
         T3 t = new T3();
         CountDownLatch countDownLatch = new CountDownLatch(1);
 
