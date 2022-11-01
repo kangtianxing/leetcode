@@ -13,5 +13,12 @@ public class Client {
         System.out.println("------------------");
         chess1.display(new Coordinate(10,10));
         chess1.display(new Coordinate(20,20));
+        Double.parseDouble("123");
+        String.valueOf(12);
+        int a = 5;
+//        Double b = (Double) a;
+        Integer.valueOf("10");
+        int $123 = 33;
+//        int default = 3;
     }
 }
